@@ -80,7 +80,7 @@
             android:id="@+id/input_email"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            layout="@layout/view_input_email"
+            layout="@layout/view_input_user"
             app:layout_constraintTop_toBottomOf="@id/spacerView"
             app:layout_constraintStart_toStartOf="@id/guide_start"
             app:layout_constraintEnd_toEndOf="@id/guide_end"/>

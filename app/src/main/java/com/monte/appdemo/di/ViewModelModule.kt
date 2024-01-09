@@ -1,5 +1,6 @@
 package com.monte.appdemo.di
 
+import com.monte.appdemo.viewmodel.common.CalculatorViewModel
 import com.monte.appdemo.viewmodel.common.LoginViewModel
 import com.monte.appdemo.viewmodel.common.SplashViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
@@ -13,4 +14,10 @@ val viewModelModule = module {
     viewModel { LoginViewModel(
         loginValidatorUseCase = get(),
         loginUseCase = get()) }
+
+    viewModel { CalculatorViewModel(
+        loginValidatorUseCase = get(),
+        getPricesUseCase = get(),
+        calculatorUseCase = get()) }
+
 }

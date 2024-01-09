@@ -35,6 +35,12 @@
         android:screenOrientation="portrait"
         android:launchMode="singleTask"/>
 
+    <activity android:name=".views.activities.HomeActivity"
+        android:exported="true"
+        android:noHistory="true"
+        android:screenOrientation="portrait"
+        android:launchMode="singleTask"/>
+
   </application>
 
 </manifest>

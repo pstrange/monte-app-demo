@@ -30,7 +30,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_spl
 			}
 			is StepResult.Continue -> {
 				finish()
-//				openActivity<HomeActivity>()
+				openActivity<HomeActivity>()
 			}
 			else -> Unit
 		}

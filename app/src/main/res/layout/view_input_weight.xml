@@ -20,10 +20,10 @@
       tools:background="@color/white">
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/email"
+        android:id="@+id/weight"
         style="@style/InputForm.Icon"
-        android:hint="Username"
-        android:inputType="textEmailAddress"
+        android:hint="Peso"
+        android:inputType="number"
         app:validatorInput="@{error}"
         app:isEnabled="@{enabled}"
         app:layout_constraintTop_toTopOf="parent"
@@ -37,7 +37,7 @@
         android:layout_marginHorizontal="10dp"
         tools:text="Mensaje de error"
         app:validatorMessage="@{error}"
-        app:layout_constraintTop_toBottomOf="@id/email"
+        app:layout_constraintTop_toBottomOf="@id/weight"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 

@@ -7,4 +7,5 @@
   <string name="alert_lbl_accept">Aceptar</string>
 
   <string name="alert_title_error">Opss! algo salio mal</string>
+  <string name="alert_title_success">Monto autorizado por:</string>
 </resources>
