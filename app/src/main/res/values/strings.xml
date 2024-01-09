@@ -5,4 +5,6 @@
   <string name="alert_message">Error desconocido</string>
   <string name="alert_lbl_cancel">Cancelar</string>
   <string name="alert_lbl_accept">Aceptar</string>
+
+  <string name="alert_title_error">Opss! algo salio mal</string>
 </resources>

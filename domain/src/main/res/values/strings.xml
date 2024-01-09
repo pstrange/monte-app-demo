@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <string name="error_empty_msj">Este campo es obligatorio</string>
+</resources>

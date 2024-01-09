@@ -6,6 +6,7 @@ import com.monte.appdemo.R
 import com.monte.appdemo.databinding.ActivitySplashBinding
 import com.monte.appdemo.viewmodel.common.SplashViewModel
 import com.monte.appdemo.views.base.activities.BaseActivity
+import com.monte.appdemo.views.base.utils.openActivity
 import com.monte.domain.models.common.StepResult
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -25,7 +26,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_spl
 		when(step){
 			is StepResult.RequireSession -> {
 				finish()
-//				openActivity<AuthActivity>()
+				openActivity<AuthActivity>()
 			}
 			is StepResult.Continue -> {
 				finish()

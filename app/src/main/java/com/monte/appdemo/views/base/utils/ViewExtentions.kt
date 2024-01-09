@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.text.*
 import android.text.method.LinkMovementMethod
+import android.text.method.PasswordTransformationMethod
 import android.text.style.ClickableSpan
 import android.text.style.ForegroundColorSpan
 import android.view.View
@@ -119,6 +120,15 @@ fun setErrorIcon(
     } ?: run {
         imageView?.setColorFilter(ContextCompat.getColor(imageView.context, R.color.blue))
     }
+}
+
+@BindingAdapter(value = ["validatorTogglePass"], requireAll = false)
+fun toggleTransformationPass(
+    editText: AppCompatEditText?,
+    show: Boolean?) {
+    editText?.transformationMethod =
+        if(show == true) null else
+            PasswordTransformationMethod()
 }
 
 fun TextView.setSpanText(fulltext: String, subtexts: Array<String>, color: Int = R.color.blue_span) {

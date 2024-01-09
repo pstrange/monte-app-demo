@@ -8,6 +8,7 @@ import com.monte.data.di.repositoriesModule
 import com.monte.data.di.serviceModule
 import com.monte.data.local.PreferenceComponent_PrefsComponent
 import com.monte.domain.di.useCasesModule
+import com.monte.domain.di.validatorModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 
@@ -25,6 +26,7 @@ class MonteApp : Application() {
 				preferencesModule,
 				mappersModule,
 				repositoriesModule,
+				validatorModule,
 				useCasesModule,
 				viewModelModule)
 		}

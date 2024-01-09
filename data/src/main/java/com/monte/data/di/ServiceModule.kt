@@ -10,6 +10,7 @@ import org.koin.dsl.module
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
+import javax.net.ssl.HostnameVerifier
 
 private const val CONNECT_TIMEOUT = 30L
 private const val WRITE_TIMEOUT = 30L
@@ -43,6 +44,7 @@ private fun getClient(interceptor: Interceptor? = null) =
         interceptor?.let { validInterceptor ->
             addInterceptor(validInterceptor)
         }
+        hostnameVerifier { _, _ -> true }
         addInterceptor(HttpLoggingInterceptor().apply {
             level = HttpLoggingInterceptor.Level.BODY
         })
