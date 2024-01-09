@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">MonteAppDemo</string>
+  <string name="alert_title_loading">Cargando...</string>
+  <string name="alert_title">Monte de piedad</string>
+  <string name="alert_message">Error desconocido</string>
+  <string name="alert_lbl_cancel">Cancelar</string>
+  <string name="alert_lbl_accept">Aceptar</string>
+</resources>

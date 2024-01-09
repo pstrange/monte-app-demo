@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="title"
+            type="String" />
+        <variable
+            name="message"
+            type="String" />
+        <variable
+            name="cancelLabel"
+            type="String" />
+        <variable
+            name="acceptLabel"
+            type="String" />
+        <variable
+            name="showCancel"
+            type="Boolean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_title"
+            android:layout_marginTop="16dp"
+            android:text="@{title != null ? title : @string/alert_title}"
+            app:layout_constraintEnd_toEndOf="@id/guide_end"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/guide_start"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Monte de piedad"
+            style="@style/MainTextView.Black.TitleDlg"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_message"
+            style="@style/MainTextView.Black.MessageDlg"
+            android:text="@{message != null ? message : @string/alert_message}"
+            android:layout_marginTop="@dimen/margin_vertical"
+            tools:text="Mensaje"
+            app:layout_constraintTop_toBottomOf="@id/text_title"
+            app:layout_constraintStart_toStartOf="@id/guide_start"
+            app:layout_constraintEnd_toEndOf="@id/guide_end"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_cancel"
+            style="@style/Button.White.Stroke"
+            android:layout_width="0dp"
+            android:text="@{cancelLabel != null ? cancelLabel : @string/alert_lbl_cancel}"
+            android:visibility="@{showCancel ? View.VISIBLE : View.GONE}"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            tools:text="Cancelar"
+            app:layout_constraintStart_toStartOf="@id/guide_start"
+            app:layout_constraintEnd_toStartOf="@id/button_accept"
+            app:layout_constraintBottom_toBottomOf="@id/button_accept"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_accept"
+            style="@style/Button.Wine"
+            android:layout_width="0dp"
+            android:text="@{acceptLabel != null ? acceptLabel : @string/alert_lbl_accept}"
+            android:layout_marginTop="@dimen/margin_vertical"
+            android:layout_marginBottom="@dimen/margin_vertical"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            tools:text="Aceptar"
+            app:layout_constraintTop_toBottomOf="@id/text_message"
+            app:layout_constraintStart_toEndOf="@id/button_cancel"
+            app:layout_constraintEnd_toEndOf="@id/guide_end"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

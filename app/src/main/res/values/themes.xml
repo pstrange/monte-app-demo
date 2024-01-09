@@ -1,0 +1,102 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+  <!-- Base application theme. -->
+  <style name="Theme.MonteAppDemo" parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/wine</item>
+    <item name="colorPrimaryVariant">@color/wine</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/wine_disabled</item>
+    <item name="colorSecondaryVariant">@color/wine_disabled</item>
+    <item name="colorOnSecondary">@color/black</item>
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor" tools:targetApi="l">@color/wine</item>
+  </style>
+
+  <style name="AppThemeMain" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/wine</item>
+    <item name="colorPrimaryVariant">@color/wine</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/wine_disabled</item>
+    <item name="colorSecondaryVariant">@color/wine_disabled</item>
+    <item name="colorOnSecondary">@color/black</item>
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+  </style>
+
+  <style name="Theme.AnimDialog" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowEnterAnimation">@anim/fade_in_custom</item>
+    <item name="android:windowExitAnimation">@anim/fade_out_custom</item>
+  </style>
+
+  <style name="DialogFragmentAnimation">
+    <item name="android:windowEnterAnimation">@anim/fade_in_custom</item>
+    <item name="android:windowExitAnimation">@anim/fade_out_custom</item>
+  </style>
+
+  <style name="MainTextView">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+  </style>
+
+  <style name="MainTextView.Black">
+    <item name="android:textColor">@color/black</item>
+  </style>
+
+  <style name="MainTextView.White">
+    <item name="android:textColor">@color/white</item>
+  </style>
+
+  <style name="MainTextView.Gray">
+    <item name="android:textColor">@color/gray</item>
+  </style>
+
+  <style name="MainTextView.Wine">
+    <item name="android:textColor">@color/wine</item>
+  </style>
+
+  <style name="MainTextView.Black.TitleDlg">
+    <item name="android:textSize">20sp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="MainTextView.Black.MessageDlg">
+    <item name="android:textSize">14sp</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="Button">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">50dp</item>
+    <item name="android:paddingStart">30dp</item>
+    <item name="android:paddingEnd">30dp</item>
+    <item name="android:stateListAnimator">@null</item>
+    <item name="android:elevation">0dp</item>
+    <item name="android:textAllCaps">true</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:foreground">@drawable/ripple_trans_to_gray_rounded</item>
+  </style>
+
+  <style name="Button.Wine">
+    <item name="android:textColor">@color/selector_text_white</item>
+    <item name="android:background">@drawable/selector_button_wine</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="Button.White">
+    <item name="android:textColor">@color/selector_text_black</item>
+    <item name="android:background">@drawable/selector_button_white</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+  <style name="Button.White.Stroke">
+    <item name="android:textColor">@color/selector_text_black</item>
+    <item name="android:background">@drawable/selector_button_white_stroke</item>
+    <item name="android:gravity">center</item>
+  </style>
+
+</resources>

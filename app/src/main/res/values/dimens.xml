@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <dimen name="small_radius">4dp</dimen>
+
+  <dimen name="normal_elevation">6dp</dimen>
+  <dimen name="normal_radius_small">4dp</dimen>
+  <dimen name="normal_radius">8dp</dimen>
+  <dimen name="normal_radius_double">16dp</dimen>
+
+  <dimen name="margin_vertical">24dp</dimen>
+  <dimen name="margin_horizontal">24dp</dimen>
+  <dimen name="margin_vertical_half">12dp</dimen>
+  <dimen name="margin_horizontal_half">12dp</dimen>
+
+  <dimen name="margin_small">5dp</dimen>
+  <dimen name="margin_medium">10dp</dimen>
+  <dimen name="margin_large">15dp</dimen>
+  <dimen name="margin_xlarge">20dp</dimen>
+  <dimen name="margin_xxlarge">25dp</dimen>
+  <dimen name="margin_xxxlarge">30dp</dimen>
+  <dimen name="margin_big">35dp</dimen>
+  <dimen name="margin_xbig">45dp</dimen>
+
+  <dimen name="text_size_small">12sp</dimen>
+  <dimen name="text_size_normal">14sp</dimen>
+  <dimen name="text_size_medium">16sp</dimen>
+  <dimen name="text_size_large">18sp</dimen>
+  <dimen name="text_size_xlarge">20sp</dimen>
+  <dimen name="text_size_xxlarge">22sp</dimen>
+  <dimen name="text_size_xxxlarge">24sp</dimen>
+  <dimen name="text_size_code">28sp</dimen>
+
+  <dimen name="button_width_dlg">120dp</dimen>
+
+  <dimen name="loader_size">90dp</dimen>
+
+</resources>
